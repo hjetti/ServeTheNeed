@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Servetheneed" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AEq-ZC-OlC">
+                                <rect key="frame" x="78" y="230" width="197" height="30"/>
+                                <state key="normal" title="ARE YOU FROM AN NGO"/>
+                                <connections>
+                                    <segue destination="V8o-Nk-4nD" kind="show" id="SAT-WK-REN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADF-KU-zhq">
+                                <rect key="frame" x="73" y="257" width="212" height="118"/>
+                                <state key="normal" title="ARE YOU A COMMON CITIZEN"/>
+                                <connections>
+                                    <segue destination="uD5-Ge-xhW" kind="show" id="jkN-y6-ujE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ADF-KU-zhq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="73" id="MFr-YT-nZ0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ADF-KU-zhq" secondAttribute="bottom" constant="292" id="Ncu-rf-av5"/>
+                            <constraint firstItem="AEq-ZC-OlC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="78" id="YPh-1l-RDP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AEq-ZC-OlC" secondAttribute="trailing" constant="100" id="eEa-0F-aZT"/>
+                            <constraint firstItem="AEq-ZC-OlC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="210" id="rCV-ps-JK8"/>
+                            <constraint firstItem="ADF-KU-zhq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="237" id="rfe-h5-Ceb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="802" y="130"/>
+        </scene>
+        <!--Profile2 View Controller-->
+        <scene sceneID="7ZG-pP-LjC">
+            <objects>
+                <viewController id="V8o-Nk-4nD" customClass="profile2ViewController" customModule="Servetheneed" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zjy-uO-hMs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter the number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E3j-w8-vU5">
+                                <rect key="frame" x="96" y="63" width="190" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5CQ-uQ-aR7"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter the name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mum-4O-ls1">
+                                <rect key="frame" x="96" y="101" width="190" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6uf-R0-CzM"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Of-Q0-DZk">
+                                <rect key="frame" x="151" y="147" width="54" height="52"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="save:" destination="V8o-Nk-4nD" eventType="touchUpInside" id="xUF-mk-Vl1"/>
+                                    <segue destination="xAE-rm-D9j" kind="show" id="Ncu-hW-gtq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SdX-nJ-847">
+                                <rect key="frame" x="22" y="20" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="oIJ-nm-GkA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UGQ-Ht-2kc" firstAttribute="trailing" secondItem="E3j-w8-vU5" secondAttribute="trailing" constant="89" id="K4t-5H-I9e"/>
+                            <constraint firstItem="E3j-w8-vU5" firstAttribute="leading" secondItem="UGQ-Ht-2kc" secondAttribute="leading" constant="96" id="MI8-4V-IgZ"/>
+                            <constraint firstItem="5Of-Q0-DZk" firstAttribute="leading" secondItem="UGQ-Ht-2kc" secondAttribute="leading" constant="151" id="Mwu-rU-RkY"/>
+                            <constraint firstItem="E3j-w8-vU5" firstAttribute="top" secondItem="UGQ-Ht-2kc" secondAttribute="top" constant="43" id="PdH-kf-H9c"/>
+                            <constraint firstItem="mum-4O-ls1" firstAttribute="top" secondItem="E3j-w8-vU5" secondAttribute="bottom" constant="8" symbolic="YES" id="PjF-wd-pQS"/>
+                            <constraint firstItem="E3j-w8-vU5" firstAttribute="leading" secondItem="mum-4O-ls1" secondAttribute="leading" id="bfD-ng-dv6"/>
+                            <constraint firstItem="UGQ-Ht-2kc" firstAttribute="bottom" secondItem="5Of-Q0-DZk" secondAttribute="bottom" constant="468" id="g1f-bL-e3S"/>
+                            <constraint firstItem="E3j-w8-vU5" firstAttribute="trailing" secondItem="mum-4O-ls1" secondAttribute="trailing" id="pcU-Z6-Zak"/>
+                            <constraint firstItem="UGQ-Ht-2kc" firstAttribute="trailing" secondItem="5Of-Q0-DZk" secondAttribute="trailing" constant="170" id="qXT-VX-dD8"/>
+                            <constraint firstItem="5Of-Q0-DZk" firstAttribute="top" secondItem="mum-4O-ls1" secondAttribute="bottom" constant="16" id="u3S-vc-YWh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UGQ-Ht-2kc"/>
+                    </view>
+                    <connections>
+                        <outlet property="name" destination="mum-4O-ls1" id="gak-qr-mZi"/>
+                        <outlet property="phoneNumber" destination="E3j-w8-vU5" id="WJH-5K-P0X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BJf-IY-iNE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-40.799999999999997" y="1049.3253373313344"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="azH-fB-reU">
+            <objects>
+                <viewController id="uD5-Ge-xhW" customClass="profileViewController" customModule="Servetheneed" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t0S-2Y-RYd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVZ-Xf-pv6">
+                                <rect key="frame" x="98" y="56" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER YOUR NAME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mYz-eA-ufO">
+                                <rect key="frame" x="104" y="120" width="167" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mlw-NL-G43">
+                                <rect key="frame" x="164" y="170" width="46" height="30"/>
+                                <state key="normal" title="SAVE"/>
+                                <connections>
+                                    <action selector="save:" destination="uD5-Ge-xhW" eventType="touchUpInside" id="TqW-cv-Fnu"/>
+                                    <segue destination="xAE-rm-D9j" kind="show" id="ltG-ds-mBq"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter phone number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hcn-PD-XXN">
+                                <rect key="frame" x="104" y="72" width="167" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iM4-R8-Nsc">
+                                <rect key="frame" x="22" y="26" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="7ca-W1-nZ5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Mlw-NL-G43" firstAttribute="centerX" secondItem="t0S-2Y-RYd" secondAttribute="centerX" id="750-3Y-0sN"/>
+                            <constraint firstItem="hcn-PD-XXN" firstAttribute="top" secondItem="ax0-GN-k2F" secondAttribute="top" constant="52" id="Bsp-fT-lvZ"/>
+                            <constraint firstItem="hcn-PD-XXN" firstAttribute="leading" secondItem="mYz-eA-ufO" secondAttribute="leading" id="EcE-z4-dkg"/>
+                            <constraint firstItem="hcn-PD-XXN" firstAttribute="trailing" secondItem="mYz-eA-ufO" secondAttribute="trailing" id="JEa-jl-qym"/>
+                            <constraint firstItem="mYz-eA-ufO" firstAttribute="top" secondItem="hcn-PD-XXN" secondAttribute="bottom" constant="18" id="RV0-bx-oEG"/>
+                            <constraint firstItem="Mlw-NL-G43" firstAttribute="leading" secondItem="ax0-GN-k2F" secondAttribute="leading" constant="164" id="fTe-Le-vDj"/>
+                            <constraint firstItem="Mlw-NL-G43" firstAttribute="top" secondItem="mYz-eA-ufO" secondAttribute="bottom" constant="20" id="fbU-Az-WKy"/>
+                            <constraint firstItem="hcn-PD-XXN" firstAttribute="leading" secondItem="ax0-GN-k2F" secondAttribute="leading" constant="104" id="hpV-be-jdg"/>
+                            <constraint firstItem="BVZ-Xf-pv6" firstAttribute="top" secondItem="t0S-2Y-RYd" secondAttribute="topMargin" constant="36" id="mRL-X3-8U1"/>
+                            <constraint firstItem="BVZ-Xf-pv6" firstAttribute="leading" secondItem="t0S-2Y-RYd" secondAttribute="leadingMargin" constant="82" id="wPa-rZ-X2W"/>
+                            <constraint firstItem="mYz-eA-ufO" firstAttribute="centerX" secondItem="Mlw-NL-G43" secondAttribute="centerX" id="wUa-Su-Bmf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ax0-GN-k2F"/>
+                    </view>
+                    <connections>
+                        <outlet property="name" destination="mYz-eA-ufO" id="ClW-pU-gsS"/>
+                        <outlet property="phoneNumber" destination="hcn-PD-XXN" id="32k-t6-SVK"/>
+                        <outlet property="phonenumber" destination="BVZ-Xf-pv6" id="wBw-FY-G0I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="om9-pt-2ek" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1656.8" y="129.98500749625188"/>
+        </scene>
+        <!--Choose View Controller-->
+        <scene sceneID="qq7-4V-vwz">
+            <objects>
+                <viewController id="xAE-rm-D9j" customClass="chooseViewController" customModule="Servetheneed" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tka-tm-zM9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7EQ-vL-XJw">
+                                <rect key="frame" x="121" y="149" width="141" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Know more about us"/>
+                                <connections>
+                                    <segue destination="g1b-jf-dYh" kind="show" id="68y-ZI-Kxq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9c-4T-fGF">
+                                <rect key="frame" x="144" y="201" width="87" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Nearby NGO"/>
+                                <connections>
+                                    <segue destination="A96-46-ZQO" kind="show" id="as8-CV-Zs8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gY-NM-FOf">
+                                <rect key="frame" x="137" y="266" width="103" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Near by citizen"/>
+                                <connections>
+                                    <segue destination="G2g-Kd-cxK" kind="show" id="aOd-7F-NII"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMo-pm-Nem">
+                                <rect key="frame" x="107" y="334" width="173" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sustainable goals"/>
+                                <connections>
+                                    <segue destination="Wpr-Af-uPl" kind="show" id="Q8N-fF-9sf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="eP5-f4-thi"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ybk-xn-kSv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2716" y="123.68815592203899"/>
+        </scene>
+        <!--Community View Controller-->
+        <scene sceneID="xHS-4c-dce">
+            <objects>
+                <viewController id="Wpr-Af-uPl" customClass="communityViewController" customModule="Servetheneed" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eT9-nq-rJX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fr0-wl-0PU">
+                                <rect key="frame" x="16" y="123" width="76" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="No poverty"/>
+                                <connections>
+                                    <segue destination="gHK-Fd-4yw" kind="show" id="a9u-XG-EVE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGe-4V-Vad">
+                                <rect key="frame" x="16" y="185" width="185" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Good health and Wellbeing"/>
+                                <connections>
+                                    <segue destination="u2L-TU-TE3" kind="show" id="HoP-C6-qUb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NgK-mE-7wq">
+                                <rect key="frame" x="16" y="249" width="121" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Quality Education"/>
+                                <connections>
+                                    <segue destination="95e-bW-MId" kind="show" id="oFc-Tg-zYU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rn4-xl-lTD">
+                                <rect key="frame" x="16" y="311" width="261" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Industry, innovation and Infrastructure"/>
+                                <connections>
+                                    <segue destination="gRV-6p-d9P" kind="show" id="H6d-3r-HwI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CPG-SS-SBX">
+                                <rect key="frame" x="16" y="20" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="xAE-rm-D9j" kind="show" id="IPV-wz-KBu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="zi2-qU-vQw"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mln-6g-Trn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1714" y="953"/>
+        </scene>
+        <!--Poverty View Controller-->
+        <scene sceneID="LWH-jP-PYn">
+            <objects>
+                <viewController id="gHK-Fd-4yw" customClass="povertyViewController" customModule="Servetheneed" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EDF-CL-tbp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aKk-8n-OBk">
+                                <rect key="frame" x="26" y="20" width="317" height="529"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Kk-Bc-deH">
+                                <rect key="frame" x="26" y="20" width="317" height="529"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">Create Jobs:- The best pathway out of poverty is a well-paying job. To get back to prerecession employment levels, we must create 5.6 million new jobs. 
+Raise the minimum wage:- Raising the minimum wage to $10.10 per hour and indexing it to inflation—as President Barack Obama and several members of Congress have called for—would lift more than 4 million Americans out of poverty.
+Increase the Earned Income Tax Credit for childless workers:- President Obama and policymakers across the political spectrum have called for boosting the EITC in order to right this wrong. Importantly, this policy change should be combined with a hike in the minimum wage; one is not a substitute for the other.
+Support pay equity:- With female full-time workers earning just 78 cents for every $1 earned by men, action must be taken to ensure equal pay for equal work. Closing the gender wage gap would cut poverty in half for working women and their families and add nearly half a trillion dollars to the nation’s gross domestic product.
+Provide paid leave and paid sick days:- The United States is the only developed country in the world without paid family and medical leave and paid sick days, making it very difficult for millions of American families to balance work and family without having to sacrifice needed income.
+ Establish work schedules that work:- Low-wage and hourly jobs increasingly come with unpredictable and constantly shifting work schedules, which means workers struggle even more to balance erratic work hours with caring for their families.
+
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="DVY-fU-5yr">
+                                <rect key="frame" x="26" y="568" width="317" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Think you can help with this issue, contact nearby NGO"/>
+                                <connections>
+                                    <segue destination="A96-46-ZQO" kind="show" id="Z4Y-LX-uvj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpe-k8-kGW">
+                                <rect key="frame" x="6" y="0.0" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="back"/>
+                                <connections>
+                                    <segue destination="Wpr-Af-uPl" kind="show" id="Vv4-eJ-uWc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="1BQ-zO-rLa"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cTe-QJ-1qN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1071.2" y="1626.8365817091455"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8JM-Mh-c4g">
+            <objects>
+                <viewController id="u2L-TU-TE3" customClass="l2ViewController" customModule="Servetheneed" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2qj-L6-POm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d28-iA-4oo">
+                                <rect key="frame" x="33" y="54" width="314" height="512"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDt-S1-zFT">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="512"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <mutableString key="text">Things that can contribute to positive mental health and wellbeing include:
+spending quality time with close friends and family
+working in a job or finding an activity that is meaningful, which can provide a sense of purpose
+learning a new skill such as painting, singing, knitting, or a foreign language which can provide a sense of pride and achievement
+finding a hobby (such as gardening, playing sport, cooking, or arts and craft)
+giving to others by volunteering, being there for friend in need, or caring for animals
+having someone to talk to who can provide support and reassurance
+eating healthily and exercising regularly
+spending time with people who share similar interests
+experiencing new things such as trying different foods, travelling, or meeting new people.
+
+
+</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="F6R-9E-fqc">
+                                <rect key="frame" x="33" y="574" width="314" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Think you can help with this issue, contact nearby NGO"/>
+                                <connections>
+                                    <segue destination="A96-46-ZQO" kind="show" id="x8N-jp-mlQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtl-pX-Atz">
+                                <rect key="frame" x="39" y="16" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="back"/>
+                                <connections>
+                                    <segue destination="Wpr-Af-uPl" kind="show" id="gAM-FM-6HG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="iUi-nj-xbB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kOH-6l-ust" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1825" y="2128"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mLW-dY-d8j">
+            <objects>
+                <viewController id="95e-bW-MId" customClass="l3ViewController" customModule="Servetheneed" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HgK-02-SnR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3yC-LV-32w">
+                                <rect key="frame" x="31" y="51" width="316" height="519"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtw-fT-Yq8">
+                                        <rect key="frame" x="0.0" y="0.0" width="316" height="519"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <mutableString key="text">Helping children with limited resources to get a quality education
+By organizing and mobilizing material, physical and financial resources, we focus on improving learning outcomes for disadvantaged children in under-resources schools and marginalized communities.
+Through outreach, we mobilized enough support to build libraries, classrooms and sanitary facilities, provide tables and chairs in classrooms, and conduct after-school mentoring sessions and supplementary learning classes for students in those schools.
+
+
+Youth power and the way forward
+The daunting task of ensuring equitable and quality educational opportunities for all globally is a great responsibility on everyone - academia to civil society organizations, policy makers, legislators, and most importantly, young people.
+National governments must embrace responsibly their constitutional obligation to build strong education systems that provide quality basic education for children across different educational levels.
+Citizens must stay engaged and hold governments accountable. But most importantly, young people must, and will, play a huge role in ensuring that tangible efforts are concertedly channeled through NGOs, sustainable businesses, social enterprises and more platforms to deliver quality education for all to build a safe, secure and prosperous future for the next generation.  
+
+
+
+</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jfh-1y-DtU">
+                                <rect key="frame" x="37" y="13" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="back"/>
+                                <connections>
+                                    <segue destination="Wpr-Af-uPl" kind="show" id="FXJ-FR-hMb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="r99-J2-yrv">
+                                <rect key="frame" x="31" y="591" width="316" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Think you can help with this issue, contact nearby NGO"/>
+                                <connections>
+                                    <segue destination="A96-46-ZQO" kind="show" id="evK-M6-cWd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="luO-4x-8Mu"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GbZ-y9-ZLP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2648.8000000000002" y="1663.7181409295354"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9sS-8Z-mjE">
+            <objects>
+                <viewController id="gRV-6p-d9P" customClass="l4ViewController" customModule="Servetheneed" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tPe-Et-5Dj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uAp-Wr-csg">
+                                <rect key="frame" x="16" y="66" width="343" height="490"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ydf-yk-Kol">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="490"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <mutableString key="text">Investment in infrastructure and innovation are crucial drivers of economic growth and development. With over half the world population now living in cities, mass transport and renewable energy are becoming ever more important, as are the growth of new industries and information and communication technologies.
+
+Technological progress is also key to finding lasting solutions to both economic and environmental challenges, such as providing new jobs and promoting energy efficiency. Promoting sustainable industries, and investing in scientific research and innovation, are all important ways to facilitate sustainable development.
+
+More than 4 billion people still do not have access to the Internet, and 90 percent are from the developing world. Bridging this digital divide is crucial to ensure equal access to information and knowledge, as well as foster innovation and entrepreneurship.   </mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZC-Jk-HXi">
+                                <rect key="frame" x="16" y="28" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="back"/>
+                                <connections>
+                                    <segue destination="Wpr-Af-uPl" kind="show" id="4L2-NZ-qmB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="smW-gr-EDt">
+                                <rect key="frame" x="16" y="564" width="343" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Think you can help with this issue, contact nearby NGO"/>
+                                <connections>
+                                    <segue destination="A96-46-ZQO" kind="show" id="l18-m8-BIz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="k7X-w4-VkY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5WM-oJ-dJZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3543.1999999999998" y="1672.7136431784108"/>
+        </scene>
+        <!--Dialogflow View Controller-->
+        <scene sceneID="FMk-cI-DWx">
+            <objects>
+                <viewController id="g1b-jf-dYh" customClass="dialogflowViewController" customModule="Servetheneed" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KLy-yF-Hh4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2B-U1-SIJ">
+                                <rect key="frame" x="16" y="185" width="343" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Nb8-sZ-2dV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Say Hello to begin" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sh3-do-N0d">
+                                <rect key="frame" x="16" y="74" width="327" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="Kf4-21-Nkn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OYB-Ep-uhc">
+                                <rect key="frame" x="29" y="492" width="314" height="109"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="109" id="Cov-vS-GzQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Say something" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D8i-8y-8ZJ">
+                                <rect key="frame" x="118" y="147" width="139" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dZL-JY-iek">
+                                <rect key="frame" x="135" y="212" width="121" height="27"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-1"/>
+                                <state key="normal" image="send">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="click">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="clipping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="sendMessage:" destination="g1b-jf-dYh" eventType="touchUpInside" id="Hkv-UZ-zTE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDg-WS-v9F">
+                                <rect key="frame" x="22" y="6" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="xAE-rm-D9j" kind="show" id="9ee-iF-WBr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="D8i-8y-8ZJ" firstAttribute="leading" secondItem="F4B-en-sZs" secondAttribute="leading" constant="118" id="07k-zU-Jjq"/>
+                            <constraint firstItem="d2B-U1-SIJ" firstAttribute="top" secondItem="D8i-8y-8ZJ" secondAttribute="bottom" constant="8" symbolic="YES" id="0yx-hE-1CG"/>
+                            <constraint firstItem="jDg-WS-v9F" firstAttribute="leading" secondItem="F4B-en-sZs" secondAttribute="leading" constant="22" id="3AH-oq-pIq"/>
+                            <constraint firstItem="sh3-do-N0d" firstAttribute="leading" secondItem="d2B-U1-SIJ" secondAttribute="leading" id="BT1-Nx-K0f"/>
+                            <constraint firstItem="F4B-en-sZs" firstAttribute="trailing" secondItem="dZL-JY-iek" secondAttribute="trailing" constant="119" id="DUi-jg-GdY"/>
+                            <constraint firstItem="sh3-do-N0d" firstAttribute="leading" secondItem="KLy-yF-Hh4" secondAttribute="leadingMargin" id="K1H-AR-jhn"/>
+                            <constraint firstItem="D8i-8y-8ZJ" firstAttribute="centerX" secondItem="d2B-U1-SIJ" secondAttribute="centerX" id="KZX-Aq-1cb"/>
+                            <constraint firstItem="sh3-do-N0d" firstAttribute="trailing" secondItem="OYB-Ep-uhc" secondAttribute="trailing" id="PeW-rv-BaK"/>
+                            <constraint firstItem="sh3-do-N0d" firstAttribute="top" secondItem="jDg-WS-v9F" secondAttribute="bottom" constant="38" id="UWq-ou-hoU"/>
+                            <constraint firstItem="d2B-U1-SIJ" firstAttribute="centerY" secondItem="dZL-JY-iek" secondAttribute="centerY" id="fXC-z7-x1f"/>
+                            <constraint firstItem="d2B-U1-SIJ" firstAttribute="trailing" secondItem="KLy-yF-Hh4" secondAttribute="trailingMargin" id="gVk-cH-aEr"/>
+                            <constraint firstItem="D8i-8y-8ZJ" firstAttribute="top" secondItem="sh3-do-N0d" secondAttribute="bottom" constant="34" id="lay-87-ayH"/>
+                            <constraint firstItem="dZL-JY-iek" firstAttribute="leading" secondItem="F4B-en-sZs" secondAttribute="leading" constant="135" id="mfi-Fu-D5w"/>
+                            <constraint firstItem="OYB-Ep-uhc" firstAttribute="leading" secondItem="F4B-en-sZs" secondAttribute="leading" constant="29" id="oya-D2-46M"/>
+                            <constraint firstItem="jDg-WS-v9F" firstAttribute="top" secondItem="KLy-yF-Hh4" secondAttribute="topMargin" constant="-14" id="q3y-GS-HxJ"/>
+                            <constraint firstItem="F4B-en-sZs" firstAttribute="trailing" secondItem="sh3-do-N0d" secondAttribute="trailing" constant="32" id="r5f-db-gqv"/>
+                            <constraint firstItem="F4B-en-sZs" firstAttribute="bottom" secondItem="OYB-Ep-uhc" secondAttribute="bottom" constant="66" id="vus-DF-z0b"/>
+                            <constraint firstItem="dZL-JY-iek" firstAttribute="top" secondItem="D8i-8y-8ZJ" secondAttribute="bottom" constant="35" id="wbN-29-UCU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="F4B-en-sZs"/>
+                    </view>
+                    <connections>
+                        <outlet property="chipResponse" destination="sh3-do-N0d" id="0MW-3B-9g2"/>
+                        <outlet property="messageField" destination="D8i-8y-8ZJ" id="zV9-Ln-tya"/>
+                        <outlet property="microphonebutton" destination="dZL-JY-iek" id="AaF-LG-ZNO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="URA-oO-emP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2652" y="940.47976011994012"/>
+        </scene>
+        <!--Citizen View Controller-->
+        <scene sceneID="OlJ-ga-goV">
+            <objects>
+                <viewController id="G2g-Kd-cxK" customClass="citizenViewController" customModule="Servetheneed" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g4s-Pa-Fsp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3q-Y8-e00">
+                                <rect key="frame" x="22" y="20" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="xAE-rm-D9j" kind="show" id="bXf-9m-CzX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ttx-nC-8ZT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XrX-cE-puK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3500" y="862"/>
+        </scene>
+        <!--Ngo View Controller-->
+        <scene sceneID="LlU-t6-SGJ">
+            <objects>
+                <viewController id="A96-46-ZQO" customClass="ngoViewController" customModule="Servetheneed" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dwz-O5-2Uo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPf-mZ-9iD">
+                                <rect key="frame" x="22" y="10" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="xAE-rm-D9j" kind="show" id="cUa-zH-vZc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="P4T-OY-Ykj"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U8H-eC-6oO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3475" y="121"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="send" width="16" height="16"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="as8-CV-Zs8"/>
+        <segue reference="Q8N-fF-9sf"/>
+        <segue reference="IPV-wz-KBu"/>
+        <segue reference="oIJ-nm-GkA"/>
+    </inferredMetricsTieBreakers>
+</document>
