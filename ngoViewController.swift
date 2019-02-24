@@ -34,7 +34,7 @@ class ngoViewController: UIViewController {
                                 let long = document.data()?["long"]
                                 let name = document.data()?["Name"] as? String ?? ""
                                 let num = document.data()?["Phone"] as? String ?? ""
-                                let camera = GMSCameraPosition.camera(withLatitude: lat as! CLLocationDegrees, longitude: long as! CLLocationDegrees, zoom: 1.0)
+                                let camera = GMSCameraPosition.camera(withLatitude: lat as! CLLocationDegrees, longitude: long as! CLLocationDegrees, zoom: 7.0)
                                 let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
                                 self.view = mapView
                                 
